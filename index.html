@@ -11,7 +11,10 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="assets/img/apple-touch-icon.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/img/apple-touch-icon.png" rel="icon" sizes="16x16" type="image/png">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -27,6 +30,9 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--    Fullpage CSS File-->
+    <link href="assets/fullpage/jquery.fullPage.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -58,7 +64,7 @@
 </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
-<section class="d-flex flex-column justify-content-center" id="hero">
+<section class="d-flex flex-column justify-content-center section" id="hero">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Alexey Kulikov</h1>
         <p>I'm <span class="typed" data-typed-items="Program/Project Manager, Team Leader, Scrum Master"></span></p>
@@ -75,7 +81,7 @@
 <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -138,7 +144,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section class="resume" id="resume">
+    <section class="resume section" id="resume">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -242,7 +248,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section class="portfolio section-bg" id="portfolio">
+    <section class="portfolio section-bg section" id="portfolio">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -297,7 +303,7 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
-    <section class="specializations" id="specializations">
+    <section class="specializations section" id="specializations">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -394,7 +400,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section class="contact" id="contact">
+    <section class="contact section" id="contact">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -474,6 +480,22 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<!-- Библиотека jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- js файлы плагина fullpage -->
+<script src="assets/fullpage/jquery.easings.min.js"></script>
+<script src="assets/fullpage/scrolloverflow.min.js"></script>
+<script src="assets/fullpage/jquery.fullPage.min.js"></script>
+
+<!-- инициализация плагина fullpage -->
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage();
+        menu: '#navigation'
+    });
+</script>
 
 </body>
 
